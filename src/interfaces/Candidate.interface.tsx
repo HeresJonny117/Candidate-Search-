@@ -1,5 +1,5 @@
 // TODO: Create an interface for the Candidate objects returned by the API
-import { Candidate } from './path/to/Candidate';
+import { Candidate } from './path/to/CandidateSearch';
 
 export async function CandidateSearch(): Promise<Candidate> {
   const response = await fetch('searchGithubUser');
