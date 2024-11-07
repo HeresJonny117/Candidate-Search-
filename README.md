@@ -1,33 +1,46 @@
-# React + TypeScript + Vite
+Candidate Search Application
+Description
+The Candidate Search Application is a web-based tool designed to help employers find and review potential candidates by retrieving public profiles from GitHub. Users can search, review, and save candidate profiles for future reference. The app is built with TypeScript and deployed on Render.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+Retrieves candidate data from GitHub, including name, username, location, avatar, email, GitHub profile link, and company.
+Allows users to save candidates to a local list and navigate through profiles.
+Displays saved candidates with their information, persisting them across page reloads using localStorage.
+User-friendly navigation with options to sort and filter candidates.
 
-Currently, two official plugins are available:
+Table of Contents
 
-* [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md), which uses [Babel](https://babeljs.io/) for Fast Refresh
-* [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc), which uses [SWC](https://swc.rs/) for Fast Refresh
+Usage
+Features
+Technologies Used
+Contact
 
-## Expanding the ESLint configuration
+Usage
 
-If you're developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Candidate Search: When the page loads, the app fetches and displays a candidate's public profile information from GitHub.
+Save or Skip Candidates:
+Click the + button to save a candidate to your list of potential hires and load the next profile.
+Click the - button to skip the current candidate and view the next profile.
+Review Saved Candidates: Navigate to the “Saved Candidates” page to see your list of saved profiles. The list persists across sessions, allowing you to access saved candidates even after reloading the page.
+Additional Details
+Message Display: When no more candidates are available to review, or if no candidates have been saved, appropriate messages are shown to the user.
 
-* Configure the top-level `parserOptions` property as follows:
+Features
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Candidate Profile Display: Shows key candidate information from GitHub.
+Local Storage: Saves selected candidates to localStorage for persistence.
+Navigation: Links between Candidate Search and Saved Candidates pages.
 
-* Replace `plugin:@typescript-eslint/recommended` with `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`.
-* Optionally, add `plugin:@typescript-eslint/stylistic-type-checked`.
-* Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` and `plugin:react/jsx-runtime` to the `extends` list.
+Technologies Used
 
----
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+TypeScript: For static type-checking and improved code quality.
+React: For building a responsive, component-based UI.
+Vite: For fast development and optimized production builds.
+GitHub API: To retrieve public candidate profiles.
+Local Storage: For persisting candidate data between sessions.
+Render: For application deployment.
+
+Contact
+
+Github: HeresJonny117
+Email: Jhegarty968@gmail.com
